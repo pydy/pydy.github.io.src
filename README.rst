@@ -22,4 +22,5 @@ Serve the website locally with, e.g.::
 
 Once the website is to your liking, copy the files from ``_build/html`` to the
 root directory of your clone of the https://github.com/pydy/pydy.github.io
-repository and submit a pull request with the updates.
+repository and submit a pull request with the updates. Make sure you do not
+delete the `.nojekyll` file in that repository.
