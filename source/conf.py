@@ -51,7 +51,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'PyDy'
-copyright = '2014, PyDy Team'
+copyright = '2015, PyDy Team'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
