@@ -1,6 +1,14 @@
 This repository contains the source files for the website hosted through Github
 Pages at http://github.com/pydy/pydy.github.io.
 
+How make a blog post
+====================
+
+Create a new rst file in `source/blog/<year>` and make sure to include a rst
+directive with the date of the post, e.g.::
+
+   .. post:: 22 Jan, 2014
+
 Dependencies
 ============
 
