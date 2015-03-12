@@ -1,4 +1,10 @@
 div.floatleft {
+<<<<<<< HEAD
     width: 30%;
     float: left;
 }
+=======
+    width: 150px;
+    float: left;
+}
+>>>>>>> 42d65028b535523120f7ac29ba867c88142c98a6
