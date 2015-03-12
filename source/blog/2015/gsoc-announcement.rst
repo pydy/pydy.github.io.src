@@ -2,6 +2,7 @@ PyDy will participate in Google Summer of Code 2015
 ===================================================
 
 .. post:: 11 Mar, 2015
+   :category: Google Summer of Code
 
 Google Summer of Code season is rapidly approaching and we are happy to
 announce that PyDy will be participating again this year. We are a
