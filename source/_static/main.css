@@ -144,9 +144,10 @@ ul li a:hover{
 .logo .image {
 	float: left;
 	clear: none;
-	height: 100px;
-	width: 95px;
+	height: 60%;
+	width: 57%;
 	padding-left: 60px;
+	margin-bottom: 30px;
 }
 
 .nav-toc{
@@ -198,7 +199,7 @@ ul li a:hover{
 }
 
 .nav-toc {
-	margin-top: 120px;
+	margin-top: 245px;
 }
 
 .nav-toc a{
@@ -231,7 +232,7 @@ ul li a:hover{
 	margin-top: 20px;
 }
 
-.splash .container {
+.splash {
 	width: 62%;
 	border-radius: 5px;
 	-moz-box-shadow: 0 0 5px #3498db;
@@ -293,6 +294,12 @@ h1:hover .headerlink, h2:hover .headerlink, h3:hover.headerlink, h4:hover .heade
 
 .headerlink {
 	visibility: hidden;
+}
+
+#pydy {
+	background: #19B5FE;
+	padding-bottom: 4px;
+	border-radius: 3px;
 }
 
 @media screen and (max-width: 1200px) {
