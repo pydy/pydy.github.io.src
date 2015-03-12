@@ -58,9 +58,9 @@ copyright = '2015, PyDy Team'
 # built documents.
 #
 # The short X.Y version.
-version = '0.1.0'
+version = ''
 # The full version, including alpha/beta/rc tags.
-release = '0.1.0'
+release = ''
 
 # Configuration bits for Ablog
 blog_path = 'blog'
@@ -145,7 +145,7 @@ html_title = 'PyDy Website'
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['../_static']
+html_static_path = ['_static',]
 
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
