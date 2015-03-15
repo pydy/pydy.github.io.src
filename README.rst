@@ -13,7 +13,6 @@ Dependencies
 ============
 
 - Sphinx http://sphinx-doc.org/
-- Sphinx Bootstrap Theme https://github.com/ryan-roemer/sphinx-bootstrap-theme
 - werkzeug http://werkzeug.pocoo.org/
 - ablog http://ablog.readthedocs.org
 
