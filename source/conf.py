@@ -36,7 +36,7 @@ extensions = [
 ]
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['../_templates']
+templates_path = ['_templates']
 templates_path.append(ablog.get_html_templates_path())
 
 # The suffix of source filenames.
@@ -116,7 +116,7 @@ pygments_style = 'sphinx'
 # a list of builtin themes.
 #html_theme = 'sphinxdoc'
 html_theme = 'pydy'
-html_theme_path = ['../_theme']
+html_theme_path = ['_theme']
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the

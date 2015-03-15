@@ -41,14 +41,12 @@
 		</div> 
 
 		<div class="nav-toc">
-			{% block navbartoc %}
-		    {% include "globaltoc.html" %}
-		    <!-- {% if theme_navbar_pagenav %}
-		    {% include "navbartoc.html" %}
-		    {% endif %} -->
-		    {% endblock %}
-	    </div>
-	
+			{% block sidebar1 %}
+				{% block sidebarlogo %}{% endblock %}
+				{{ sidebar() }}
+			{% endblock %}
+			<!--{% block navbartoc %}{% include "globaltoc.html" %}{% endblock %}-->
+	    </div>	
 		<div class="nav-download">
 			<h3>Download</a></h3>
 			<p>
