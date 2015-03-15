@@ -9,14 +9,15 @@
 	        <header class="header">
 				<div class="container">
 		        	<ul>
-					  <li id="pydy"><a href="/index.html">Pydy</a></li>
+                                  <li id="pydy"><a href="{{ pathto('index') }}">PyDy</a></li>
 					  <li>
-					      <a href="/download.html">
+                                          <a href="{{ pathto('download') }}">
 					  		Download
 					  	  </a>
 					  </li>
 					  <li><a href="http://pydy.readthedocs.org">Documentation</a></li>
-					  <li><a href="/examples/examples.html">Examples</a></li>
+                                          <li><a href="{{
+                                            pathto('examples/examples') }}">Examples</a></li>
 					  <!-- <li><a href="https://github.com/pydy/pydy">Contributing</a></li> -->
 					</ul>
 				</div>
