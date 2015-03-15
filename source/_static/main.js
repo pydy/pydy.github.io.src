@@ -1,11 +1,11 @@
 $(function () {
-	var s = $("#top");
+  var s = $("#top");
     $(window).scroll(function() {
         var windowpos = $(window).scrollTop();
         if (windowpos >= 650) {
             s.addClass("stick");
         } else {
-            s.removeClass("stick"); 
+            s.removeClass("stick");
         }
-    });	
+    });
 });
