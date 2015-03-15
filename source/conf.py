@@ -16,7 +16,6 @@
 import sys
 import os
 import ablog
-import sphinx_bootstrap_theme
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -48,6 +47,7 @@ source_suffix = '.rst'
 
 # The master toctree document.
 master_doc = 'index'
+globaltoc_depth = 4
 
 # General information about the project.
 project = 'PyDy'
@@ -115,20 +115,20 @@ pygments_style = 'sphinx'
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #html_theme = 'sphinxdoc'
-html_theme = 'bootstrap'
-html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
+html_theme = 'pydy'
+html_theme_path = ['_theme']
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-#html_theme_options = {}
+#html_theme_options = {'bootstrap_version':'3'}
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = 'The PyDy Website'
+html_title = 'PyDy Website'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
@@ -201,16 +201,20 @@ htmlhelp_basename = 'PyDydoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
+ADDITIONAL_PREAMBLE = """
+\setcounter{tocdepth}{1}
+"""
 
 latex_elements = {
 # The paper size ('letterpaper' or 'a4paper').
-#'papersize': 'letterpaper',
+#'papersize': 'a4paper',
 
 # The font size ('10pt', '11pt' or '12pt').
 #'pointsize': '10pt',
 
 # Additional stuff for the LaTeX preamble.
-#'preamble': '',
+'preamble': '\setcounter{tocdepth}{1}'
+#'preamble': ADDITIONAL_PREAMBLE
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
