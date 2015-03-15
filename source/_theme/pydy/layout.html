@@ -1,10 +1,10 @@
 {% extends "basic/layout.html" %}
 
-{% set theme_css_files = ['/_static/main.css', '/_static/custom.css',
+{% set theme_css_files = ['_static/main.css', '_static/custom.css',
   'http://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Gentium+Basic'] %}
 {% set css_files = css_files + theme_css_files %}
 {% set theme_globaltoc_depth = 5 %}
-{% set script_files = script_files +  ['/_static/main.js']%}
+{% set script_files = script_files +  ['_static/main.js']%}
 {%- block doctype -%}
 <!DOCTYPE html>
 {%- endblock %}
@@ -36,7 +36,7 @@
 	<div class="main-nav" id="main-nav">
 		<div id="site-desc" class="site-desc">
 			<div class="logo">
-				<img class="image"src="/_static/logo.svg">
+				<img class="image"src="_static/logo.svg">
 			</div>
 		</div> 
 
