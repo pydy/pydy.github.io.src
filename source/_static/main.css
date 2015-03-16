@@ -195,11 +195,12 @@ ul li a:hover{
 
 .main-nav {
   float: right;
+  clear: both;
   width: 32%;
 }
 
-.nav-toc {
-  margin-top: 63%;
+#main-nav2 {
+  clear: none;
 }
 
 .nav-toc a{
@@ -229,6 +230,7 @@ ul li a:hover{
 }
 
 .splash {
+  float: left;
   margin-top: 20px;
 }
 
@@ -336,6 +338,11 @@ h1:hover .headerlink, h2:hover .headerlink, h3:hover.headerlink, h4:hover .heade
     float: none;
   }
 
+  #main-nav2 {
+    margin-top: 10px;
+    clear: both;
+  }
+
   .title {
     padding-top: 10px;
     margin-bottom: 20px;
@@ -347,6 +354,7 @@ h1:hover .headerlink, h2:hover .headerlink, h3:hover.headerlink, h4:hover .heade
 
   .splash {
     width: auto;
+    margin-bottom: 20px;
   }
 
   .nav-toc {

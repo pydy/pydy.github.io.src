@@ -39,14 +39,22 @@
         <img class="image"src="/_static/logo.svg">
       </div>
     </div> 
-
+  </div>
+  <div class="splash">
+    <div class="container">
+      <div class="desc">
+        <p>{% block body %}{% endblock %}</p>
+      </div>
+    </div>
+  </div>
+  <div class="main-nav" id="main-nav2">
     <div class="nav-toc">
       {% block sidebar1 %}
         {% block sidebarlogo %}{% endblock %}
         {{ sidebar() }}
       {% endblock %}
       <!--{% block navbartoc %}{% include "globaltoc.html" %}{% endblock %}-->
-      </div>
+    </div>
     <div class="nav-download">
       <h3>Download</a></h3>
       <p>
@@ -57,13 +65,6 @@
         <a href="https://github.com/pydy/pydy/archive/master.zip">
         Development Version</a>
       </p>
-    </div>
-  </div>
-  <div class="splash">
-    <div class="container">
-      <div class="desc">
-        <p>{% block body %}{% endblock %}</p>
-      </div>
     </div>
   </div>
 </div>
