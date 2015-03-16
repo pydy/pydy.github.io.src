@@ -1,5 +1,4 @@
 {% extends "basic/layout.html" %}
-
 {% set theme_css_files = ['_static/main.css', '_static/custom.css',
   'http://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Gentium+Basic'] %}
 {% set css_files = css_files + theme_css_files %}
@@ -36,17 +35,25 @@
   <div class="main-nav" id="main-nav">
     <div id="site-desc" class="site-desc">
       <div class="logo">
-        <img class="image"src="_static/logo.svg">
+        <img class="image"src="{{ pathto('_static/logo.svg', 1) }}">
       </div>
     </div> 
-
+  </div>
+  <div class="splash">
+    <div class="container">
+      <div class="desc">
+        <p>{% block body %}{% endblock %}</p>
+      </div>
+    </div>
+  </div>
+  <div class="main-nav" id="main-nav2">
     <div class="nav-toc">
       {% block sidebar1 %}
         {% block sidebarlogo %}{% endblock %}
         {{ sidebar() }}
       {% endblock %}
       <!--{% block navbartoc %}{% include "globaltoc.html" %}{% endblock %}-->
-      </div>
+    </div>
     <div class="nav-download">
       <h3>Download</a></h3>
       <p>
@@ -57,13 +64,6 @@
         <a href="https://github.com/pydy/pydy/archive/master.zip">
         Development Version</a>
       </p>
-    </div>
-  </div>
-  <div class="splash">
-    <div class="container">
-      <div class="desc">
-        <p>{% block body %}{% endblock %}</p>
-      </div>
     </div>
   </div>
 </div>
