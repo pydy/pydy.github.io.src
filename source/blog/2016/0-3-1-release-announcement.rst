@@ -8,7 +8,7 @@ Today marks the release of PyDy 0.3.1. The release includes 115 commits since
 0.3.0 with a number of bug fixes. The `full release notes`_ provide the details
 of the changes, all of which are fully backwards compatible with 0.3.0.
 
-.. _full release notes: https://github.com/pydy/pydy#030
+.. _full release notes: https://github.com/pydy/pydy#031
 
 Five people contributed code to this release:
 
