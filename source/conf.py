@@ -15,6 +15,7 @@
 
 import sys
 import os
+import datetime
 import ablog
 
 # If extensions (or modules to document with autodoc) are in another directory,
@@ -51,7 +52,7 @@ globaltoc_depth = 4
 
 # General information about the project.
 project = 'PyDy'
-copyright = '2015, PyDy Team'
+copyright = '2009-{}, PyDy Team'.format(datetime.datetime.now().year)
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
