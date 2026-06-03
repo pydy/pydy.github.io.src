@@ -40,6 +40,7 @@ Classes
 -------
 
 Here is a list of classes:
+
   * ReferenceFrame
   * Point
   * Vector - not created directly
@@ -47,6 +48,7 @@ Here is a list of classes:
   * Particle
   * RigidBody
   * KanesMethod
+
 You can call ''help(class)'' to see the help entry for ''class''. For example,
 ''help(ReferenceFrame)'' to see the help entry for ''ReferenceFrame''.
 
@@ -110,6 +112,7 @@ Functions
 ---------
 
 Here is a list of functions:
+
   * mprint
   * inertia
   * mprint
@@ -119,6 +122,7 @@ Here is a list of functions:
   * dot
   * outer
   * kinematic equations
+
 On each of them, you can call ''help(function)'' to see the help entry for
 ''function''. For example, ''help(inertia)'' will describe what the ''inertia''
 function is and how to use it.

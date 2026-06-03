@@ -268,10 +268,10 @@ by a simple copy/paste of the output of the ccode() function in Sympy.
 
     #include "double_pendulum.h"
 
-    #include `<cmath>`
-    #include `<gsl/gsl_errno.h>`
+    #include <cmath>
+    #include <gsl/gsl_errno.h>
 
-    #include `<gsl/gsl_odeiv2.h>`
+    #include <gsl/gsl_odeiv2.h>
 
     double double_pendulum_ke(const double x[4], const double params[3])
     {
@@ -287,7 +287,7 @@ by a simple copy/paste of the output of the ccode() function in Sympy.
 
     int double_pendulum_ode(double t, const double x[], double dxdt[], void *_params)
     {
-        double const *params = static_cast`<double const *>`(_params);
+        double const *params = static_cast<double const *>(_params);
         double m = params[0], g = params[1], l = params[2];
         dxdt[0] = x[2];
         dxdt[1] = x[3];
@@ -301,9 +301,9 @@ and energies to a data file, our main driver is as follows:
 
 .. code-block:: c
 
-    #include `<fstream>`
+    #include <fstream>
 
-    #include `<gsl/gsl_odeiv2.h>`
+    #include <gsl/gsl_odeiv2.h>
     #include "double_pendulum.h"
 
     struct simdata { double t, x[4], pe, ke; };       // t, q1, q2, u1, u2, pe, ke
@@ -315,7 +315,7 @@ and energies to a data file, our main driver is as follows:
         s.pe = double_pendulum_pe(s.x, params);         // intial potential energy
         const double tf = 5.0;                          // final time
         const int N = 501;                              // number of points
-        
+
         // GSL setup code
         gsl_odeiv2_system sys = {double_pendulum_ode, NULL, 4, params};
         gsl_odeiv2_driver * d = gsl_odeiv2_driver_alloc_y_new(&sys, gsl_odeiv2_step_rk8pd, 1e-6, 1e-6, 0.0);

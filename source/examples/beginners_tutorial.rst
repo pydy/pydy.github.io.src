@@ -55,6 +55,7 @@ and functions associated with it. To see a list of them type:
 .. code:: python
 
     >>> dir(N)
+
 Notice that three of the properties are `x`, `y`, and `z`. These are the
 orthonormal unit vectors associated with the reference frame and are the
 building blocks for creating vectors. We can create a vector by simply building
