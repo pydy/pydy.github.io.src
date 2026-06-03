@@ -1,0 +1,6 @@
+name: pydy-website
+channels:
+  - conda-forge
+dependencies:
+  - ablog
+  - sphinx

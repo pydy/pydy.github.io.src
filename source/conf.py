@@ -16,7 +16,6 @@
 import sys
 import os
 import datetime
-import ablog
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -32,13 +31,13 @@ import ablog
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'ablog',
+    'sphinx.ext.intersphinx',
     'sphinx.ext.mathjax',
-    'ablog'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
-templates_path.append(ablog.get_html_templates_path())
 
 # The suffix of source filenames.
 source_suffix = '.rst'
