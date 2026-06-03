@@ -162,9 +162,9 @@ html_static_path = ['_static',]
 
 # Custom sidebar templates, maps document names to template names.
 #html_sidebars = {}
-html_sidebars = {'**': ['postcard.html', 'recentposts.html',
-          'tagcloud.html', 'categories.html',
-          'archives.html', ]}
+html_sidebars = {'**': ['ablog/postcard.html', 'ablog/recentposts.html',
+                        'ablog/tagcloud.html', 'ablog/categories.html',
+                        'ablog/archives.html', ]}
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.

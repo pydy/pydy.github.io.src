@@ -37,3 +37,7 @@ Site Overview
    documentation
    history
    gsoc
+   examples/commands
+   examples/beginners_tutorial
+   examples/chaos_pendulum
+   examples/double_pendulum
